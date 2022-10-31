@@ -1,0 +1,25 @@
+displayName: ip2proxy plugin
+type: middleware
+
+import: github.com/benbut/traefik-plugin-ip2proxy
+
+summary: '[ip2proxy] Add Proxy Headers'
+
+testData:
+  fromHeader: 'X-Custom-IP'
+  filename: 'IP2PROXY-LITE-PX11.BIN'
+  headers:
+    CountryShort: X-PROXY-CountryShort
+    CountryLong: X-PROXY-CountryLong
+    Region: X-PROXY-Region
+    City: X-PROXY-City
+    ISP: X-PROXY-ISP
+    Domain: X-PROXY-Domain
+    IsProxy: X-PROXY-IsProxy
+    ProxyType: X-PROXY-ProxyType
+    UsageType: X-PROXY-UsageType
+    Asn: X-PROXY-Asn
+    As: X-PROXY-As
+    LastSeen: X-PROXY-LastSeen
+    Threat: X-PROXY-Threat
+    Provider: X-PROXY-Provider
